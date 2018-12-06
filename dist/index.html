@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>electron-demo</title>
+</head>
+
+<body>
+    <video id="gum-local" autoplay playsinline muted></video><br>
+    <button id="shareScreen">Start Sharing Screen</button><br>
+    <textarea id="appList" rows="15" cols="90">
+        Apps : 
+    </textarea><br>
+    <input type="text" id="appName">
+    <button id="shareApp">Start Sharing App</button>
+    <script>
+        require('../src/renderer.js')
+    </script>
+</body>
+
+</html>

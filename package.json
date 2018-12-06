@@ -1,0 +1,20 @@
+{
+    "name": "electron-demo",
+    "version": "0.0.1",
+    "main": "main.js",
+    "scripts":
+    {
+        "dev":"npm run development",
+        "start": "electron .",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+      
+    },
+    "dependencies": {
+        "electron": "^3.0.10"
+    },
+    "devDependencies": {
+        "laravel-mix": "^3.0.0",
+        "webpack": "^4.27.1"
+    }
+}
